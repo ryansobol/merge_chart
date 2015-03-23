@@ -1,1 +1,1 @@
-# merge_chart
+# Merge Conflict Chart
