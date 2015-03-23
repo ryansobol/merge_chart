@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Merge Chart</title>
+  </head>
+  <body>
+    <canvas width="600" height="600"></canvas>
+    <script src="chart.js"></script>
+    <script charset="utf-8">
+      var data = [
+        {
+          value: 100,
+          color: '#46BFBD',
+          highlight: '#5AD3D1',
+          label: "People who understand merge conflicts"
+        },
+        {
+          value: 50,
+          color:'#F7464A',
+          highlight: '#FF5A5E',
+          label: "People who don't understand merge conflicts"
+        },
+        {
+          value: 300,
+          color: '#FDB45C',
+          highlight: '#FFC870',
+          label: "People who think they understand merge conflicts"
+        }
+      ];
+
+      var options = { segmentStrokeColor: '#000', segmentStrokeWidth: 4 };
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var canavs = document.getElementsByTagName('canvas')[0];
+        var ctx = canavs.getContext('2d');
+        var chart = new Chart(ctx).Pie(data, options);
+      });
+    </script>
+  </body>
+</html>
