@@ -9,7 +9,7 @@ x<!DOCTYPE html>
     <script charset="utf-8">
       var data = [
         {
-          value: 100,
+          value: 800,
           color: '#46BFBD',
           highlight: '#5AD3D1',
           label: "People who understand merge conflicts"
@@ -31,8 +31,8 @@ x<!DOCTYPE html>
       var options = { segmentStrokeColor: '#000', segmentStrokeWidth: 4 };
 
       document.addEventListener('DOMContentLoaded', function() {
-        var canavs = document.getElementsByTagName('canvas')[0];
-        var ctx = canavs.getContext('2d');
+        var canvas = document.getElementsByTagName('canvas')[0];
+        var ctx = canvas.getContext('2d');
         var chart = new Chart(ctx).Pie(data, options);
       });
     </script>
