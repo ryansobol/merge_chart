@@ -31,8 +31,8 @@
       var options = { segmentStrokeColor: '#000', segmentStrokeWidth: 4 };
 
       document.addEventListener('DOMContentLoaded', function() {
-        var canavs = document.getElementsByTagName('canvas')[0];
-        var ctx = canavs.getContext('2d');
+        var canvas = document.getElementsByTagName('canvas')[0];
+        var ctx = canvas.getContext('2d');
         var chart = new Chart(ctx).Pie(data, options);
       });
     </script>
